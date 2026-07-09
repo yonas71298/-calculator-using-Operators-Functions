@@ -31,8 +31,8 @@ calculator/
 
 1. Clone this repository:
    ```bash
-   git clone <your-repo-url>
-   cd calculator
+   git clone https://github.com/yonas71298/-calculator-using-Operators-Functions.git
+   cd -calculator-using-Operators-Functions
    ```
 
 2. Open `index.html` in your web browser, or use a local server:
@@ -62,4 +62,4 @@ calculator/
 
 ## Author
 
-Your Name — Full Stack Development V8
+Yonas — Full Stack Development V8
