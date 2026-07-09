@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator | Operators & Functions</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="calculator-app">
+    <header class="app-header">
+      <h1>Calculator</h1>
+    </header>
+
+    <section class="calculator-card" aria-labelledby="calculator-heading">
+      <h2 id="calculator-heading" class="visually-hidden">Calculator Form</h2>
+
+      <form id="calculator-form" class="calculator-form" novalidate>
+        <div class="input-group">
+          <label for="num1">First Number</label>
+          <input
+            type="number"
+            id="num1"
+            name="num1"
+            placeholder="Enter first number"
+            step="any"
+            required
+          >
+        </div>
+
+        <div class="input-group">
+          <label for="num2">Second Number</label>
+          <input
+            type="number"
+            id="num2"
+            name="num2"
+            placeholder="Enter second number"
+            step="any"
+          >
+        </div>
+
+        <fieldset class="operations-fieldset">
+          <legend>Basic Operations</legend>
+          <div class="button-grid basic-ops">
+            <button type="button" class="btn btn-primary" id="btn-add">Addition (+)</button>
+            <button type="button" class="btn btn-primary" id="btn-subtract">Subtraction (−)</button>
+            <button type="button" class="btn btn-primary" id="btn-multiply">Multiplication (×)</button>
+            <button type="button" class="btn btn-primary" id="btn-divide">Division (÷)</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="operations-fieldset">
+          <legend>Advanced Operations</legend>
+          <div class="button-grid advanced-ops">
+            <button type="button" class="btn btn-secondary" id="btn-sqrt">Square Root (√x)</button>
+            <button type="button" class="btn btn-secondary" id="btn-cbrt">Cube Root (∛x)</button>
+            <button type="button" class="btn btn-secondary" id="btn-power">Power (x<sup>y</sup>)</button>
+          </div>
+        </fieldset>
+      </form>
+
+      <output id="result" class="result-display" for="num1 num2" aria-live="polite">
+        Result will appear here
+      </output>
+    </section>
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
